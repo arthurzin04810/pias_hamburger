@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <img id="logo" src="imagens/x-pedrao1.png" alt="">
+    <img id="logo" src="imagens/x-pedrao.png" alt="">
     <br>
-    <label for="nome_cliente">Nome:</label>
-    <input type="text" name="nome_cliente" id="nome_cliente" placeholder="cliente">
+
+ <label>Nome: <input type="text" id="nome"></label>
     <br>
     <label for="telefone_cliente">E-mail:</label>
     <input type="text" name="e-mail_cliente" id="e-mail_cliente" placeholder="E-mail">
@@ -20,19 +22,31 @@
     <br>
     <label for="data_nascimento">Nascimento:</label>
     <input type="date" name="data_nascimento" id="data_nascimento">
-    <br> 
+    <br>
     <label for="opçoes_cardapiolanches">Lanches:</label>
-    <select id="opçoes_cardapiolanches"></select>
+<select name="cores">
+    <option value="X-tudo">tudo</option>
+    <option value="X-gaúcho">Azul</option>
+    <option value="X-salada"></option> 
+    <option value="">X-egg</option>
+    <option value=""><x-bacon></x-bacon></option>
+</select>
     <br>
     <label for="opçoes_cardapiobebidas">Bebidas:</label>
-    <select id="opçoes_cardapiobebidas"></select>
+<select name="cores">
+    <option value="vermelho">Vermelho</option>
+    <option value="azul">Azul</option>
+    <option value="verde">Verde</option>
+</select>
     <br>
-    <h1>INFORMAÇÕES IMPORTANTES</h1> 
+    <h1> ❗​INFORMAÇÕES IMPORTANTES❗​ </h1>
     <br>
-    Endereço do estabelecimento = <input type="text" name="endereço" value=" R. Quintino Bocaiúva, 1088 - Centro, Foz do Iguaçu - PR, 85851-130" readonly>
+    Endereço do estabelecimento = <input type="text" name="endereço"
+        value="📍​ R. Quintino Bocaiúva, 1088 - Centro, Foz do Iguaçu - PR, 85851-130 📍​" readonly>
     <br>
-    Telefone do estabelecimento = <input type="text" name="telefone" value=" (45) 3025-3978" readonly>
+    Telefone do estabelecimento = <input type="text" name="telefone" value=" 📲​(45) 3025-3978" readonly>
 
-
+   <script src="script.js"></script>
 </body>
+
 </html>
